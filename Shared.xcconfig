@@ -1,0 +1,15 @@
+//
+//  Shared.xcconfig
+//  SampleCLib
+//
+//  Created by Robert Patterson on 6/6/22.
+//  Copyright © 2022 Robert Patterson. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+CONFIGURATION_BUILD_DIR_Release = $(PROJECT_DIR)/xcodebuild/release
+CONFIGURATION_BUILD_DIR_Debug = $(PROJECT_DIR)/xcodebuild/test
+CONFIGURATION_BUILD_DIR = $(CONFIGURATION_BUILD_DIR_$(CONFIGURATION))
+

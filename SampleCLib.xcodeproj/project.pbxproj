@@ -34,6 +34,7 @@
 		B5AABB42284E56A700708D15 /* sampleclib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sampleclib.c; sourceTree = "<group>"; };
 		B5AABB43284E56A700708D15 /* sampleclib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sampleclib.h; sourceTree = "<group>"; };
 		B5AABB46284E57C900708D15 /* Lua.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lua.xcodeproj; path = "lua-source/Lua.xcodeproj"; sourceTree = "<group>"; };
+		B5AABB52284E69DA00708D15 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 		B55E2B2D2610CE9C003E0F63 = {
 			isa = PBXGroup;
 			children = (
+				B5AABB52284E69DA00708D15 /* Shared.xcconfig */,
 				B5AABB46284E57C900708D15 /* Lua.xcodeproj */,
 				B5AABB41284E569300708D15 /* Source */,
 				B55E2B372610CE9C003E0F63 /* Products */,
@@ -193,6 +195,7 @@
 /* Begin XCBuildConfiguration section */
 		B55E2B382610CE9C003E0F63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5AABB52284E69DA00708D15 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -224,7 +227,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/test";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -254,6 +256,7 @@
 		};
 		B55E2B392610CE9C003E0F63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5AABB52284E69DA00708D15 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -285,7 +288,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/test";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
