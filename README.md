@@ -19,13 +19,24 @@ print("pluseone(1) = ", plus_one)
 
 (See `test/test_sampleclib.lua` for an example of this code.
 
-The XCode (macOS) and Visual Studio (Windows) build files are set up to launch Finale 27 automatically. Note that to debug on macOS, you have to change the permissions on the Finale.app bundle to allow debugging. There are instructions [here](https://helpx.adobe.com/photoshop/kb/debug-plugins-in-photoshop-bigsur.html) for PhotoShop on Big Sur (and earlier) that you can use as a guide for doing the same with Finale. Unfortunately, these may not work in Monterey, due to a change in how the XCode command line utilities work. If I discover a technique for Monterey I will update this Readme file.
+# Debugging From Your IDE
 
-You may need to modify the directories of Finale in the build files.
+You can XCode (macOS) and Visual Studio (Windows) build files are set up to launch Finale when you run the Debug configuiration. Each operating system requires some extra steps.
 
-To debug your code:
+##macOS
 
-- Run Finale from XCode or Visual Studio in Debug mode.
+To debug on macOS, you have to change the permissions on the Finale.app bundle to allow debugging. There are instructions [here](https://helpx.adobe.com/photoshop/kb/debug-plugins-in-photoshop-bigsur.html) for PhotoShop on Big Sur (and earlier) that you can use as a guide for doing the same with Finale. Unfortunately, these may not work in Monterey, due to a change in how the XCode command line utilities work. If I discover a technique for Monterey I will update this Readme file.
+
+The `SampleCLib-Debug` scheme is already set to launch `/Applications/Finale.app`.
+
+##Windows
+
+In Visual Studio, open the property pages for the Debug | x64 configuration. In the `Common Properties->Debugging` tab, specify the path to `Finale.exe`.
+
+
+##To debug your code:
+
+- Run Finale from XCode or Visual Studio using Debug configuration.
 - Set breakpoints as required in the c library.
 - Run your lua script that calls the `sampleclib` file as above.
 - Your debugger should break at your breakpoints.
