@@ -1,0 +1,3 @@
+[submodule "lua-source"]
+	path = lua-source
+	url = git@github.com:finale-lua/lua-source.git
