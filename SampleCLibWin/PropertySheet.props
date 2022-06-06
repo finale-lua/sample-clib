@@ -5,6 +5,7 @@
     <LuaVersion>5.2.4</LuaVersion>
     <LuaDir>$(ProjectDir)..\lua-source\lua-$(LuaVersion)\src</LuaDir>
     <LuaName>sampleclib</LuaName>
+    <ReleaseDir>$(ProjectDir)..\release</ReleaseDir>
   </PropertyGroup>
   <PropertyGroup>
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(LuaDir);</IncludePath>
@@ -30,6 +31,9 @@
     </BuildMacro>
     <BuildMacro Include="LuaName">
       <Value>$(LuaName)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ReleaseDir">
+      <Value>$(ReleaseDir)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

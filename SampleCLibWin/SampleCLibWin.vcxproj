@@ -82,6 +82,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /i /r /y "$(OutDir)$(TargetName)$(TargetExt)" "$(ReleaseDir)\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\src\sampleclib.h" />
