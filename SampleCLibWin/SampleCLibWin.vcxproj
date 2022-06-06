@@ -84,7 +84,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)\..\..\-Test\</OutDir>
+    <OutDir>$(ProjectDir)\..\test\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -151,12 +151,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\rgptest.h" />
+    <ClInclude Include="..\src\sampleclib.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\rgptest.c" />
+    <ClCompile Include="..\src\sampleclib.c" />
     <ClCompile Include="dllmain.c" />
     <ClCompile Include="pch.c">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -166,7 +166,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\-Lua\LuaWin\LuaWin.vcxproj">
+    <ProjectReference Include="..\lua-source\LuaWin\LuaWin.vcxproj">
       <Project>{812668cf-e362-4247-bae6-68620bba365f}</Project>
     </ProjectReference>
   </ItemGroup>

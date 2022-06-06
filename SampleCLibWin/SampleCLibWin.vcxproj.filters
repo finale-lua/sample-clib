@@ -21,18 +21,18 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\rgptest.h">
+    <ClInclude Include="..\src\sampleclib.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\rgptest.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="pch.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="dllmain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sampleclib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

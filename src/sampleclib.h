@@ -19,6 +19,6 @@
 #define DLLEXPORT
 #endif
 
-DLLEXPORT int luaopen_libLuaInterfaceTest(lua_State* L);
+DLLEXPORT int luaopen_sampleclib(lua_State* L);
 
 #endif /* rgptest_h */

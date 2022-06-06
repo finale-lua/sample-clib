@@ -2,7 +2,7 @@ function plugindef()
     finaleplugin.RequireDocument = false
 end
     
-require('mobdebug').start() -- for ZeroBrane Studio debugging
+--require('mobdebug').start() -- for ZeroBrane Studio debugging
 
 local sampleclib = require('sampleclib')
 local plus_one = sampleclib.plusone(1)
