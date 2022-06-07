@@ -36,9 +36,10 @@ In Visual Studio, open the property pages for the Debug | x64 configuration. In 
 `C:\Program Files\MakeMusic\Finale\27\Finale.exe`
 
 
-## To debug your code:
+## To debug your C code:
 
-- Run Finale from XCode or Visual Studio using Debug configuration.
-- Set breakpoints as required in the c library.
-- Run your lua script that calls the `sampleclib` file as above.
-- Your debugger should break at your breakpoints.
+- Place a test script in the `test` subfolder, or use `test/test_sampleclib.lua`.
+- Run Finale from XCode (macOS) or Visual Studio (Windows) using the Debug configuration.
+- Set breakpoints as required in the C library.
+- In Finale, run your test script that calls the `sampleclib` file as above.
+- The debugger should break at your breakpoints when the script calls `sampleclib`.
