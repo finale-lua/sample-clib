@@ -4,10 +4,11 @@
 //
 //  Created by Robert Patterson on 3/28/21.
 //  Copyright © 2021 Robert Patterson. All rights reserved.
+//  (Usage permitted by MIT License. See LICENSE file in this repository.)
 //
 
-#ifndef rgptest_h
-#define rgptest_h
+#ifndef sampleclib_h
+#define sampleclib_h
 
 #include <stdio.h>
 
@@ -21,4 +22,4 @@
 
 DLLEXPORT int luaopen_sampleclib(lua_State* L);
 
-#endif /* rgptest_h */
+#endif /* sampleclib_h */

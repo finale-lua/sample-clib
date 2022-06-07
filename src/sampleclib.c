@@ -4,6 +4,7 @@
 //
 //  Created by Robert Patterson on 3/28/21.
 //  Copyright © 2021 Robert Patterson. All rights reserved.
+//  (Usage permitted by MIT License. See LICENSE file in this repository.)
 //
 
 #include "lua.h"
@@ -26,7 +27,7 @@ static const luaL_Reg sampleclib[] = {
 
 int luaopen_sampleclib (lua_State *L) {
 #if LUA_VERSION_NUM <= 501
-   luaL_openlib(L, "sampleclib", rgptest, 0);
+   luaL_openlib(L, "sampleclib", sampleclib, 0);
 #else
    luaL_newlib(L, sampleclib);
 #endif
