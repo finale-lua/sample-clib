@@ -1,11 +1,9 @@
 # sample-clib
-Sample C library that can be loaded by Lua on Finale (_RGP Lua_ plugin).
+Sample C++ library that can be loaded by Lua on Finale (_RGP Lua_ plugin).
 
-If you wish to write your own C library that can be loaded into lua scripts running under _RGP Lua_, you can use the build files (and sample source code) as a template. You can similarly use it to build existing libraries from open-source projects.
+If you wish to write your own C or C++ library that can be loaded into lua scripts running under _RGP Lua_, you can use the build files (and sample source code) as a template. You can similarly use it to build existing libraries from open-source projects.
 
-The sample libary has exactly one function, `plusone`, that adds one to an input number.
-
-To call it:
+To access functions in the library:
 
 - Copy the output library `sampleclib.dll` (Windows) or `sampleclib.dylib` (macOS) to the same folder as your script.
 - Configure your script in _RGP Lua_.
@@ -13,11 +11,49 @@ To call it:
 
 ```lua
 local sampleclib = require('sampleclib')
+```
+
+The sample libary has several functions, including some that demonstrate how to access and modify instances of classes from the PDK Framework in C++ code.
+
+### plusone(inp_number)
+
+Adds one to an input number. You can think of this as a “Hello World” function.
+
+```lua
 local plus_one = sampleclib.plusone(1)
 print("pluseone(1) = ", plus_one)
 ```
 
-(See `test/test_sampleclib.lua` for an example of this code.
+### load_measures()
+
+Returns an instance of `FCMeasures` with all the measures loaded for the current document.
+
+```lua
+local measures = sampleclib.load_measures()
+print("measures count", measures.Count)
+```
+
+### entry_duration(entry)
+
+Returns the duration of the input instance of `FCNoteEntry`.
+
+```lua
+for e in eachentry(finenv.Region()) do
+    print(sampleclib.entry_duration(e))
+end
+```
+
+### halve_duration(entry)
+
+Halves the duration of the input instance of `FCNoteEntry`.
+
+```lua
+for e in eachentrysaved(finenv.Region()) do
+    sampleclib.halve_duration(e)
+end
+```
+
+See `test/test_sampleclib.lua` for working examples of this code.
 
 # Debugging From Your IDE
 
@@ -36,7 +72,7 @@ In Visual Studio, open the property pages for the Debug | x64 configuration. In 
 `C:\Program Files\MakeMusic\Finale\27\Finale.exe`
 
 
-## To debug your C code:
+## To debug your C++ code:
 
 - Place a test script in the `test` subfolder, or use `test/test_sampleclib.lua`.
 - Run Finale from XCode (macOS) or Visual Studio (Windows) using the Debug configuration.
