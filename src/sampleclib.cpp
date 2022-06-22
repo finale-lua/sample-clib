@@ -61,7 +61,7 @@ static int sampleclib_entry_duration(lua_State *L)
  */
 static int sampleclib_plusone (lua_State *L)
 {
-   lua_pushinteger ( L, luaL_checknumber(L, 1) + 1 );
+   lua_pushnumber ( L, luaL_checknumber(L, 1) + 1 );
    return 1;
 }
 
