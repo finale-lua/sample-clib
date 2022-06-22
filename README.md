@@ -1,7 +1,7 @@
 # sample-clib
 Sample C++ library that can be loaded by Lua on Finale (_RGP Lua_ plugin).
 
-If you wish to write your own C or C++ library that can be loaded into lua scripts running under _RGP Lua_, you can use the build files (and sample source code) as a template. You can similarly use it to build existing libraries from open-source projects. The current verion is a C++ library that requires C++17 and includes `LuaBridge` to access the [PDK Framework](https://pdk.finalelua.com/) classes. If you need a template for simple C library with pure Lua calls, checkout the [`SimpleCProject-Version`](https://github.com/finale-lua/sample-clib/tree/SimpleCProject-Version) branch.
+If you wish to write your own C or C++ library that can be loaded into lua scripts running under _RGP Lua_, you can use the build files (and sample source code) as a template. You can similarly use it to build existing libraries from open-source projects. The current verion is a C++ library that requires C++17 and includes [`LuaBridge`](http://vinniefalco.github.io/LuaBridge/Manual.html) to access the [PDK Framework](https://pdk.finalelua.com/) classes. If you need a template for a plain C library with pure Lua calls, checkout the [`PlainCProject-Version`](https://github.com/finale-lua/sample-clib/tree/PlainCProject-Version) branch.
 
 To access functions in the library:
 
@@ -17,7 +17,7 @@ The sample libary has several functions, including some that demonstrate how to 
 
 ### plusone(inp_number)
 
-Adds one to an input number. You can think of this as a “Hello World” function.
+Adds one to an input number. You can think of this as a “Hello World” function that uses only the Lua API.
 
 ```lua
 local plus_one = sampleclib.plusone(1)
@@ -26,7 +26,7 @@ print("pluseone(1) = ", plus_one)
 
 ### load_measures()
 
-Returns an instance of `FCMeasures` with all the measures loaded for the current document.
+Returns an instance of `FCMeasures` with all the measures loaded for the current document. This function demonstrates how to construct a new instance of a Finale class in C++ and return it to Lua.
 
 ```lua
 local measures = sampleclib.load_measures()
@@ -35,7 +35,7 @@ print("measures count", measures.Count)
 
 ### entry_duration(entry)
 
-Returns the duration of the input instance of `FCNoteEntry`.
+Returns the duration of the input instance of `FCNoteEntry`. This function demonstrates how to pass an instance of a Finale class from Lua to C++ and return information about it to Lua.
 
 ```lua
 for e in eachentry(finenv.Region()) do
@@ -45,7 +45,7 @@ end
 
 ### halve_duration(entry)
 
-Halves the duration of the input instance of `FCNoteEntry`.
+Halves the duration of the input instance of `FCNoteEntry`. This function demonstrates how to pass an instance of a Finale class from Lua to C++ and modify it in C++. The changes then remain in effect when the function returns to Lua.
 
 ```lua
 for e in eachentrysaved(finenv.Region()) do
