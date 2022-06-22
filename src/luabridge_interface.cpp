@@ -9,16 +9,29 @@
 
 #include "luabridge_interface.hpp"
 
-bool check_framework_class(luabridge::LuaRef class_instance, const char * class_name_expected)
+FCClass::FCClass(luabridge::LuaRef luaRef) : m_luaRef(luaRef)
 {
-   if (! class_instance.isUserdata())
-      return false;
-   luabridge::LuaRef classname_method = class_instance["ClassName"];
-   if (! classname_method.isFunction())
-      return false;
-   luabridge::LuaRef class_name = classname_method(class_instance);
-   if (! class_name.isString())
-      return false;
-   std::string classname_string = class_name.tostring();
-   return (0 == strcmp(classname_string.c_str(), class_name_expected));
+   if (! luaRef.isUserdata())
+      ThrowException(m_luaRef.state(), "Attempt to initialize FCClass with non-instance variable.");
+   if (! luaRef["ClassName"].isFunction())
+      ThrowException(m_luaRef.state(), "Attempt to initialize FCClass with instance that is not a Finale class.");
+}
+
+FCClass FCClass::CreateInstance(lua_State* L, const char * const className)
+{
+   luabridge::LuaRef classLuaRef = luabridge::getGlobal(L, "finale")[className];
+   if (! classLuaRef.isTable())
+      ThrowException(L, std::string(className) + " is not a valid FCClass name.");
+   return FCClass(classLuaRef());
+}
+
+FCClass FCClass::CreateInstanceFromStack(lua_State* L, const char * const className, const int index)
+{
+   FCClass retval(luabridge::LuaRef::fromStack(L, 1));
+   luabridge::LuaRef classNameReturned = retval.ExecuteMethod<luabridge::LuaRef>("ClassName");
+   if (! classNameReturned.isString())
+      ThrowException(L, std::string("FCClass::CreateFromStack ClassName for ") + className + " did not return a string.");
+   if (0 != strcmp(classNameReturned.tostring().c_str(), className))
+      ThrowException(L, std::string("FCClass::CreateFromStack expected instance of ") + className + " but got " + classNameReturned.tostring() + ".");
+   return retval;
 }

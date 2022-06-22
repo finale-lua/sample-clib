@@ -10,6 +10,11 @@ print("pluseone(1) = ", plus_one)
 
 --finenv.UI():AlertInfo("pluseone(1) = "..tostring(plus_one), "")
 
-for e in eachentry(finenv.Region()) do
+local measures = sampleclib.load_measures()
+
+print("measures count", measures.Count)
+
+for e in eachentrysaved(finenv.Region()) do
     print(sampleclib.entry_duration(e))
+    sampleclib.halve_duration(e)
 end
