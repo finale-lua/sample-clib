@@ -1,7 +1,7 @@
 # sample-clib
 Sample C++ library that can be loaded by Lua on Finale (_RGP Lua_ plugin).
 
-If you wish to write your own C or C++ library that can be loaded into lua scripts running under _RGP Lua_, you can use the build files (and sample source code) as a template. You can similarly use it to build existing libraries from open-source projects.
+If you wish to write your own C or C++ library that can be loaded into lua scripts running under _RGP Lua_, you can use the build files (and sample source code) as a template. You can similarly use it to build existing libraries from open-source projects. The current verion is a C++ library that requires C++17 and includes `LuaBridge` to access the [PDK Framework](https://pdk.finalelua.com/) classes. If you need a template for simple C library with pure Lua calls, checkout the [`SimpleCProject-Version`](https://github.com/finale-lua/sample-clib/tree/SimpleCProject-Version) branch.
 
 To access functions in the library:
 
