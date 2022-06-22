@@ -1,5 +1,5 @@
 //
-//  sampleclib.h
+//  sampleclib.hpp
 //  SampleCLib
 //
 //  Created by Robert Patterson on 3/28/21.
@@ -7,12 +7,12 @@
 //  (Usage permitted by MIT License. See LICENSE file in this repository.)
 //
 
-#ifndef sampleclib_h
-#define sampleclib_h
+#ifndef sampleclib_hpp
+#define sampleclib_hpp
 
 #include <stdio.h>
 
-#include "lua.h"
+#include "lua.hpp"
 
 #ifdef _MSC_VER
 #define DLLEXPORT __declspec(dllexport)
@@ -20,6 +20,15 @@
 #define DLLEXPORT
 #endif
 
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 DLLEXPORT int luaopen_sampleclib(lua_State* L);
 
-#endif /* sampleclib_h */
+#ifdef __cplusplus
+}
+#endif
+
+#endif // sampleclib_hpp
