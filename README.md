@@ -13,8 +13,13 @@ If you wish to write your own C or C++ library that can be loaded into lua scrip
 To access functions in the library:
 
 - Copy the output library `sampleclib.dll` (Windows) or `sampleclib.dylib` or `sampleclib.bundle` (macOS) to the same folder as your script.
-- Configure your script in _RGP Lua_. Note that on macOS you need at least version 0.63 of _RGP Lua_ to automatically find a `.bundle` file in the folder.
-- On macOS, you can have either `.dylib` or `.bundle` but not both. For a real project this is probably not a concern, but for this sample library it can be an issue if you are going back and forth.
+- Configure your script in _RGP Lua_. Note that on macOS you need at least version 0.63 of _RGP Lua_ to automatically find a `.bundle` file. If you do not have v0.63, add this code to your script to find the `.bundle` file:
+
+``lua
+package.cpath = package.cpath .. ";" .. finenv.RunningLuaFolderPath() .. "?.bundle/Contents/MacOS/?"
+```
+
+- On macOS, Lua will find either `.dylib` or `.bundle` but not both. For a real project this is probably not a concern, but for this sample library it can be an issue if you are going back and forth.
 - Add the following code to your script:
 
 ```lua
