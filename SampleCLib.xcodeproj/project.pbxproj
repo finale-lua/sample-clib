@@ -3,37 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5AABB44284E56A700708D15 /* sampleclib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5AABB42284E56A700708D15 /* sampleclib.cpp */; };
-		B5AABB45284E56A700708D15 /* sampleclib.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5AABB43284E56A700708D15 /* sampleclib.hpp */; };
-		B5AABB4E284E57ED00708D15 /* libLua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AABB4B284E57C900708D15 /* libLua.a */; };
-		B5EFCF2728634BBA003AC07F /* Vector.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF1D28634BB9003AC07F /* Vector.h */; };
-		B5EFCF2828634BBA003AC07F /* List.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF1E28634BB9003AC07F /* List.h */; };
-		B5EFCF2928634BBA003AC07F /* RefCountedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF1F28634BB9003AC07F /* RefCountedObject.h */; };
-		B5EFCF2A28634BBA003AC07F /* RefCountedPtr.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF2128634BB9003AC07F /* RefCountedPtr.h */; };
-		B5EFCF2B28634BBA003AC07F /* Map.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF2228634BB9003AC07F /* Map.h */; };
-		B5EFCF2C28634BBA003AC07F /* LuaBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF2328634BB9003AC07F /* LuaBridge.h */; };
-		B5EFCF2D28634BBA003AC07F /* UnorderedMap.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF2428634BB9003AC07F /* UnorderedMap.h */; };
-		B5EFCF2E28634BBA003AC07F /* Array.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF2528634BB9003AC07F /* Array.h */; };
-		B5EFCF2F28634BBA003AC07F /* Optional.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF2628634BB9003AC07F /* Optional.h */; };
-		B5EFCF3428634C88003AC07F /* luabridge_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5EFCF3228634C88003AC07F /* luabridge_interface.cpp */; };
-		B5EFCF3528634C88003AC07F /* luabridge_interface.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF3328634C88003AC07F /* luabridge_interface.hpp */; };
+		B579A3402864D59100E6113D /* libLua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B579A33C2864D57900E6113D /* libLua.a */; };
+		B5DF46092864FCE800BCD610 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DF46082864FCE800BCD610 /* Carbon.framework */; };
+		B5DF460F2864FE2600BCD610 /* sampleclib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5DF460D2864FE2600BCD610 /* sampleclib.cpp */; };
+		B5DF46102864FE2600BCD610 /* luabridge_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5DF460E2864FE2600BCD610 /* luabridge_interface.cpp */; };
+		B5DF46122864FE5000BCD610 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5DF46112864FE5000BCD610 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B5AABB4A284E57C900708D15 /* PBXContainerItemProxy */ = {
+		B579A33B2864D57900E6113D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B5AABB46284E57C900708D15 /* Lua.xcodeproj */;
+			containerPortal = B579A3372864D57900E6113D /* Lua.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B50BDD1E26E9499000F1FAD3;
 			remoteInfo = Lua;
 		};
-		B5AABB4C284E57E100708D15 /* PBXContainerItemProxy */ = {
+		B579A33D2864D58B00E6113D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B5AABB46284E57C900708D15 /* Lua.xcodeproj */;
+			containerPortal = B579A3372864D57900E6113D /* Lua.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = B50BDD1D26E9499000F1FAD3;
 			remoteInfo = Lua;
@@ -41,219 +32,225 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B55E2B362610CE9C003E0F63 /* sampleclib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = sampleclib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5AABB42284E56A700708D15 /* sampleclib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sampleclib.cpp; sourceTree = "<group>"; };
-		B5AABB43284E56A700708D15 /* sampleclib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sampleclib.hpp; sourceTree = "<group>"; };
-		B5AABB46284E57C900708D15 /* Lua.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lua.xcodeproj; path = "lua-source/Lua.xcodeproj"; sourceTree = "<group>"; };
-		B5AABB52284E69DA00708D15 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
-		B5EFCF1D28634BB9003AC07F /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
-		B5EFCF1E28634BB9003AC07F /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
-		B5EFCF1F28634BB9003AC07F /* RefCountedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefCountedObject.h; sourceTree = "<group>"; };
-		B5EFCF2028634BB9003AC07F /* detail */ = {isa = PBXFileReference; lastKnownFileType = folder; path = detail; sourceTree = "<group>"; };
-		B5EFCF2128634BB9003AC07F /* RefCountedPtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefCountedPtr.h; sourceTree = "<group>"; };
-		B5EFCF2228634BB9003AC07F /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
-		B5EFCF2328634BB9003AC07F /* LuaBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaBridge.h; sourceTree = "<group>"; };
-		B5EFCF2428634BB9003AC07F /* UnorderedMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnorderedMap.h; sourceTree = "<group>"; };
-		B5EFCF2528634BB9003AC07F /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
-		B5EFCF2628634BB9003AC07F /* Optional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Optional.h; sourceTree = "<group>"; };
-		B5EFCF3228634C88003AC07F /* luabridge_interface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = luabridge_interface.cpp; sourceTree = "<group>"; };
-		B5EFCF3328634C88003AC07F /* luabridge_interface.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = luabridge_interface.hpp; sourceTree = "<group>"; };
+		B579A3372864D57900E6113D /* Lua.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lua.xcodeproj; path = "lua-source/Lua.xcodeproj"; sourceTree = "<group>"; };
+		B5A10ED72864D2DE00C23894 /* sampleclib.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleclib.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A10EDF2864D32B00C23894 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		B5A10EF02864D47400C23894 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		B5A10EF12864D47400C23894 /* LuaBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaBridge.h; sourceTree = "<group>"; };
+		B5A10EF22864D47400C23894 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		B5A10EF32864D47400C23894 /* Optional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Optional.h; sourceTree = "<group>"; };
+		B5A10EF42864D47400C23894 /* RefCountedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefCountedObject.h; sourceTree = "<group>"; };
+		B5A10EF52864D47400C23894 /* RefCountedPtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefCountedPtr.h; sourceTree = "<group>"; };
+		B5A10EF62864D47400C23894 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		B5A10EF72864D47400C23894 /* UnorderedMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnorderedMap.h; sourceTree = "<group>"; };
+		B5A10EF82864D47400C23894 /* detail */ = {isa = PBXFileReference; lastKnownFileType = folder; path = detail; sourceTree = "<group>"; };
+		B5A10EF92864D47400C23894 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		B5DF46082864FCE800BCD610 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = ../../../../../../../System/Library/Frameworks/Carbon.framework; sourceTree = "<group>"; };
+		B5DF460B2864FE2600BCD610 /* luabridge_interface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = luabridge_interface.hpp; sourceTree = "<group>"; };
+		B5DF460C2864FE2600BCD610 /* sampleclib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sampleclib.hpp; sourceTree = "<group>"; };
+		B5DF460D2864FE2600BCD610 /* sampleclib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sampleclib.cpp; sourceTree = "<group>"; };
+		B5DF460E2864FE2600BCD610 /* luabridge_interface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = luabridge_interface.cpp; sourceTree = "<group>"; };
+		B5DF46112864FE5000BCD610 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B55E2B342610CE9C003E0F63 /* Frameworks */ = {
+		B5A10ED42864D2DE00C23894 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5AABB4E284E57ED00708D15 /* libLua.a in Frameworks */,
+				B579A3402864D59100E6113D /* libLua.a in Frameworks */,
+				B5DF46092864FCE800BCD610 /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B50B920F26ED05D100DE877C /* Frameworks */ = {
+		B579A3382864D57900E6113D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B55E2B2D2610CE9C003E0F63 = {
-			isa = PBXGroup;
-			children = (
-				B5AABB52284E69DA00708D15 /* Shared.xcconfig */,
-				B5AABB46284E57C900708D15 /* Lua.xcodeproj */,
-				B5EFCF1C28634B7F003AC07F /* LuaBridge */,
-				B5AABB41284E569300708D15 /* Source */,
-				B55E2B372610CE9C003E0F63 /* Products */,
-				B50B920F26ED05D100DE877C /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		B55E2B372610CE9C003E0F63 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B55E2B362610CE9C003E0F63 /* sampleclib.dylib */,
+				B579A33C2864D57900E6113D /* libLua.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B5AABB41284E569300708D15 /* Source */ = {
+		B579A33F2864D59100E6113D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B5AABB42284E56A700708D15 /* sampleclib.cpp */,
-				B5AABB43284E56A700708D15 /* sampleclib.hpp */,
-				B5EFCF3228634C88003AC07F /* luabridge_interface.cpp */,
-				B5EFCF3328634C88003AC07F /* luabridge_interface.hpp */,
+				B5DF46082864FCE800BCD610 /* Carbon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5A10ECE2864D2DE00C23894 = {
+			isa = PBXGroup;
+			children = (
+				B5A10EDF2864D32B00C23894 /* Shared.xcconfig */,
+				B579A3372864D57900E6113D /* Lua.xcodeproj */,
+				B5A10EEF2864D45100C23894 /* LuaBridge */,
+				B5A10EE82864D3DE00C23894 /* Source */,
+				B5A10ED82864D2DE00C23894 /* Products */,
+				B579A33F2864D59100E6113D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5A10ED82864D2DE00C23894 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5A10ED72864D2DE00C23894 /* sampleclib.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5A10EE82864D3DE00C23894 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B5DF460A2864FDB900BCD610 /* Resources */,
+				B5DF460E2864FE2600BCD610 /* luabridge_interface.cpp */,
+				B5DF460B2864FE2600BCD610 /* luabridge_interface.hpp */,
+				B5DF460D2864FE2600BCD610 /* sampleclib.cpp */,
+				B5DF460C2864FE2600BCD610 /* sampleclib.hpp */,
 			);
 			name = Source;
 			path = src;
 			sourceTree = "<group>";
 		};
-		B5AABB47284E57C900708D15 /* Products */ = {
+		B5A10EEF2864D45100C23894 /* LuaBridge */ = {
 			isa = PBXGroup;
 			children = (
-				B5AABB4B284E57C900708D15 /* libLua.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B5EFCF1C28634B7F003AC07F /* LuaBridge */ = {
-			isa = PBXGroup;
-			children = (
-				B5EFCF2528634BB9003AC07F /* Array.h */,
-				B5EFCF2028634BB9003AC07F /* detail */,
-				B5EFCF1E28634BB9003AC07F /* List.h */,
-				B5EFCF2328634BB9003AC07F /* LuaBridge.h */,
-				B5EFCF2228634BB9003AC07F /* Map.h */,
-				B5EFCF2628634BB9003AC07F /* Optional.h */,
-				B5EFCF1F28634BB9003AC07F /* RefCountedObject.h */,
-				B5EFCF2128634BB9003AC07F /* RefCountedPtr.h */,
-				B5EFCF2428634BB9003AC07F /* UnorderedMap.h */,
-				B5EFCF1D28634BB9003AC07F /* Vector.h */,
+				B5A10EF62864D47400C23894 /* Array.h */,
+				B5A10EF82864D47400C23894 /* detail */,
+				B5A10EF02864D47400C23894 /* List.h */,
+				B5A10EF12864D47400C23894 /* LuaBridge.h */,
+				B5A10EF22864D47400C23894 /* Map.h */,
+				B5A10EF32864D47400C23894 /* Optional.h */,
+				B5A10EF42864D47400C23894 /* RefCountedObject.h */,
+				B5A10EF52864D47400C23894 /* RefCountedPtr.h */,
+				B5A10EF72864D47400C23894 /* UnorderedMap.h */,
+				B5A10EF92864D47400C23894 /* Vector.h */,
 			);
 			name = LuaBridge;
 			path = LuaBridge/Source/LuaBridge;
+			sourceTree = "<group>";
+		};
+		B5DF460A2864FDB900BCD610 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5DF46112864FE5000BCD610 /* Localizable.strings */,
+			);
+			name = Resources;
+			path = resources/mac;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		B55E2B322610CE9C003E0F63 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5EFCF2E28634BBA003AC07F /* Array.h in Headers */,
-				B5AABB45284E56A700708D15 /* sampleclib.hpp in Headers */,
-				B5EFCF2728634BBA003AC07F /* Vector.h in Headers */,
-				B5EFCF2D28634BBA003AC07F /* UnorderedMap.h in Headers */,
-				B5EFCF2928634BBA003AC07F /* RefCountedObject.h in Headers */,
-				B5EFCF3528634C88003AC07F /* luabridge_interface.hpp in Headers */,
-				B5EFCF2B28634BBA003AC07F /* Map.h in Headers */,
-				B5EFCF2C28634BBA003AC07F /* LuaBridge.h in Headers */,
-				B5EFCF2A28634BBA003AC07F /* RefCountedPtr.h in Headers */,
-				B5EFCF2F28634BBA003AC07F /* Optional.h in Headers */,
-				B5EFCF2828634BBA003AC07F /* List.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		B55E2B352610CE9C003E0F63 /* SampleCLib */ = {
+		B5A10ED62864D2DE00C23894 /* sampleclib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B55E2B3A2610CE9C003E0F63 /* Build configuration list for PBXNativeTarget "SampleCLib" */;
+			buildConfigurationList = B5A10EDB2864D2DE00C23894 /* Build configuration list for PBXNativeTarget "sampleclib" */;
 			buildPhases = (
-				B55E2B322610CE9C003E0F63 /* Headers */,
-				B55E2B332610CE9C003E0F63 /* Sources */,
-				B55E2B342610CE9C003E0F63 /* Frameworks */,
+				B5A10ED32864D2DE00C23894 /* Sources */,
+				B5A10ED42864D2DE00C23894 /* Frameworks */,
+				B5A10ED52864D2DE00C23894 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B5AABB4D284E57E100708D15 /* PBXTargetDependency */,
+				B579A33E2864D58B00E6113D /* PBXTargetDependency */,
 			);
-			name = SampleCLib;
-			productName = LuaInterfaceTest;
-			productReference = B55E2B362610CE9C003E0F63 /* sampleclib.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
+			name = sampleclib;
+			productName = sampleclib;
+			productReference = B5A10ED72864D2DE00C23894 /* sampleclib.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B55E2B2E2610CE9C003E0F63 /* Project object */ = {
+		B5A10ECF2864D2DE00C23894 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
-				ORGANIZATIONNAME = "Robert Patterson";
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					B55E2B352610CE9C003E0F63 = {
-						CreatedOnToolsVersion = 11.3.1;
+					B5A10ED62864D2DE00C23894 = {
+						CreatedOnToolsVersion = 13.4;
 					};
 				};
 			};
-			buildConfigurationList = B55E2B312610CE9C003E0F63 /* Build configuration list for PBXProject "SampleCLib" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = B5A10ED22864D2DE00C23894 /* Build configuration list for PBXProject "SampleClib-new" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = B55E2B2D2610CE9C003E0F63;
-			productRefGroup = B55E2B372610CE9C003E0F63 /* Products */;
+			mainGroup = B5A10ECE2864D2DE00C23894;
+			productRefGroup = B5A10ED82864D2DE00C23894 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B5AABB47284E57C900708D15 /* Products */;
-					ProjectRef = B5AABB46284E57C900708D15 /* Lua.xcodeproj */;
+					ProductGroup = B579A3382864D57900E6113D /* Products */;
+					ProjectRef = B579A3372864D57900E6113D /* Lua.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				B55E2B352610CE9C003E0F63 /* SampleCLib */,
+				B5A10ED62864D2DE00C23894 /* sampleclib */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B5AABB4B284E57C900708D15 /* libLua.a */ = {
+		B579A33C2864D57900E6113D /* libLua.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libLua.a;
-			remoteRef = B5AABB4A284E57C900708D15 /* PBXContainerItemProxy */;
+			remoteRef = B579A33B2864D57900E6113D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
 
+/* Begin PBXResourcesBuildPhase section */
+		B5A10ED52864D2DE00C23894 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DF46122864FE5000BCD610 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		B55E2B332610CE9C003E0F63 /* Sources */ = {
+		B5A10ED32864D2DE00C23894 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5AABB44284E56A700708D15 /* sampleclib.cpp in Sources */,
-				B5EFCF3428634C88003AC07F /* luabridge_interface.cpp in Sources */,
+				B5DF460F2864FE2600BCD610 /* sampleclib.cpp in Sources */,
+				B5DF46102864FE2600BCD610 /* luabridge_interface.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B5AABB4D284E57E100708D15 /* PBXTargetDependency */ = {
+		B579A33E2864D58B00E6113D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Lua;
-			targetProxy = B5AABB4C284E57E100708D15 /* PBXContainerItemProxy */;
+			targetProxy = B579A33D2864D58B00E6113D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		B55E2B382610CE9C003E0F63 /* Debug */ = {
+		B5A10ED92864D2DE00C23894 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5AABB52284E69DA00708D15 /* Shared.xcconfig */;
+			baseConfigurationReference = B5A10EDF2864D32B00C23894 /* Shared.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -263,6 +260,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -296,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -304,12 +302,14 @@
 			};
 			name = Debug;
 		};
-		B55E2B392610CE9C003E0F63 /* Release */ = {
+		B5A10EDA2864D2DE00C23894 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5AABB52284E69DA00708D15 /* Shared.xcconfig */;
+			baseConfigurationReference = B5A10EDF2864D32B00C23894 /* Shared.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -319,6 +319,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -346,57 +347,73 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		B55E2B3B2610CE9C003E0F63 /* Debug */ = {
+		B5A10EDC2864D2DE00C23894 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				EXECUTABLE_PREFIX = "";
-				PRODUCT_NAME = sampleclib;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P54J8A2VK7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.finalelua.samples.sampleclib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Debug;
 		};
-		B55E2B3C2610CE9C003E0F63 /* Release */ = {
+		B5A10EDD2864D2DE00C23894 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				EXECUTABLE_PREFIX = "";
-				PRODUCT_NAME = sampleclib;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P54J8A2VK7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.finalelua.samples.sampleclib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B55E2B312610CE9C003E0F63 /* Build configuration list for PBXProject "SampleCLib" */ = {
+		B5A10ED22864D2DE00C23894 /* Build configuration list for PBXProject "SampleClib-new" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B55E2B382610CE9C003E0F63 /* Debug */,
-				B55E2B392610CE9C003E0F63 /* Release */,
+				B5A10ED92864D2DE00C23894 /* Debug */,
+				B5A10EDA2864D2DE00C23894 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B55E2B3A2610CE9C003E0F63 /* Build configuration list for PBXNativeTarget "SampleCLib" */ = {
+		B5A10EDB2864D2DE00C23894 /* Build configuration list for PBXNativeTarget "sampleclib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B55E2B3B2610CE9C003E0F63 /* Debug */,
-				B55E2B3C2610CE9C003E0F63 /* Release */,
+				B5A10EDC2864D2DE00C23894 /* Debug */,
+				B5A10EDD2864D2DE00C23894 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B55E2B2E2610CE9C003E0F63 /* Project object */;
+	rootObject = B5A10ECF2864D2DE00C23894 /* Project object */;
 }

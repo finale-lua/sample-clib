@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  SampleClib-new
+
+  Created by Robert Patterson on 6/23/22.
+  
+*/
+
+"STR 0001" = "This is a test";
+

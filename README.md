@@ -3,10 +3,18 @@ Sample C++ library that can be loaded by Lua on Finale (_RGP Lua_ plugin).
 
 If you wish to write your own C or C++ library that can be loaded into lua scripts running under _RGP Lua_, you can use the build files (and sample source code) as a template. You can similarly use it to build existing libraries from open-source projects. The current verion is a C++ library that requires C++17 and includes [`LuaBridge`](http://vinniefalco.github.io/LuaBridge/Manual.html) to access the [PDK Framework](https://pdk.finalelua.com/) classes. If you need a template for a plain C library with pure Lua calls, checkout the [`PlainCProject-Version`](https://github.com/finale-lua/sample-clib/tree/PlainCProject-Version) branch.
 
+## Library Formats
+|Name|Operating System|Comments|
+|----|----|----|
+|`sampleclib.dll`|Windows|A `dll` file can contain both code and localized resources such as strings and dialog boxes.|
+|`sampleclib.dylib`|macOS|A dynamic link library that is not a bundle. These cannot contain any resources. This format might be preferable for an Open Source extension to the Lua language, such as a stand-alone build of `luasocket`.|
+|`sampleclib.bundle`|macOS|A bundle that can contain resources. This format is required if your library has any dialog boxes, localizable strings, or other U.I elements.|
+
 To access functions in the library:
 
-- Copy the output library `sampleclib.dll` (Windows) or `sampleclib.dylib` (macOS) to the same folder as your script.
-- Configure your script in _RGP Lua_.
+- Copy the output library `sampleclib.dll` (Windows) or `sampleclib.dylib` or `sampleclib.bundle` (macOS) to the same folder as your script.
+- Configure your script in _RGP Lua_. Note that on macOS you need at least version 0.63 of _RGP Lua_ to automatically find a `.bundle` file in the folder.
+- On macOS, you can have either `.dylib` or `.bundle` but not both. For a real project this is probably not a concern, but for this sample library it can be an issue if you are going back and forth.
 - Add the following code to your script:
 
 ```lua
@@ -51,6 +59,14 @@ Halves the duration of the input instance of `FCNoteEntry`. This function demons
 for e in eachentrysaved(finenv.Region()) do
     sampleclib.halve_duration(e)
 end
+```
+
+### get_string(stringkey)
+
+Returns a string from the string resources in the C++ library. Currently the Windows project returns an error string. The function only works on macOS if the library is a `.bundle`. This function demonstrates the ability to pull U.I. resources out of the macOS bundle.
+
+```lua
+local str1 = sampleclib.get_string("STR 0001")
 ```
 
 See `test/test_sampleclib.lua` for working examples of this code.
