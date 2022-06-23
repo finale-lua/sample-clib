@@ -66,6 +66,7 @@ check-signature
 enc_temp_folder
 *.dylib
 *.dSYM
+*.bundle
 
 # vc++ noise
 # the resource compiler is absurdly noisy and requires delicacy to get around it

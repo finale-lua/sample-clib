@@ -7,9 +7,46 @@
 //  (Usage permitted by MIT License. See LICENSE file in this repository.)
 //
 
+#if OPERATING_SYSTEM == MAC_OS
+#include "Carbon/Carbon.h"
+#endif
+
 #include "luabridge_interface.hpp"
 
 #include "sampleclib.hpp"
+
+/** \brief Demonstrates retrieving a string resource from the Library */
+static int sampleclib_get_string(lua_State *L)
+{
+   bool pushed1 = false;
+   std::string strKey(luaL_checkstring(L, 1));
+#if OPERATING_SYSTEM == MAC_OS
+   auto C_to_CFString = [](const std::string &cstring)
+      { return CFStringCreateWithCString(kCFAllocatorDefault, cstring.c_str(), kCFStringEncodingUTF8); };
+   CFStringRef bundleID = C_to_CFString("com.finalelua.samples.sampleclib");
+   CFBundleRef bundleref = CFBundleGetBundleWithIdentifier(bundleID);
+   CFRelease(bundleID);
+   if (bundleref)
+   {
+      CFStringRef key = C_to_CFString(strKey.c_str());
+      CFStringRef tablename = C_to_CFString("Localizable");
+      CFStringRef stringRef = CFCopyLocalizedStringFromTableInBundle (key, tablename, bundleref, CFSTR(""));
+      CFRelease(key);
+      CFRelease(tablename);
+      if (stringRef)
+      {
+         char szBuffer[500];
+         CFStringGetCString(stringRef, szBuffer, sizeof(szBuffer), kCFStringEncodingUTF8);
+         CFRelease(stringRef);
+         lua_pushstring(L, szBuffer);
+         pushed1 = true;
+      }
+   }
+#endif
+   if (! pushed1)
+      lua_pushfstring(L, "No resource found for %s.", strKey.c_str());
+   return  1;
+}
 
 /** \brief Demonstrates how to instantiate an FCClass for the FCMeasures collection.
  * This function also loads all measures in the current document.
@@ -70,6 +107,7 @@ static const luaL_Reg sampleclib[] = {
    {"entry_duration",   sampleclib_entry_duration},
    {"halve_duration",   sampleclib_halve_duration},
    {"load_measures",    sampleclib_load_measures},
+   {"get_string",       sampleclib_get_string},
    {NULL, NULL} // sentinel
 };
 
