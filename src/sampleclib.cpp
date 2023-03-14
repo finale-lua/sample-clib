@@ -60,8 +60,11 @@ static int sampleclib_load_measures(lua_State *L)
    FCClass measures = FCClass::CreateInstance(L, "FCMeasures");
    measures.ExecuteMethod<bool>("LoadAll");
    // these 2 lines demonstrate how to get a value back that is another FCClass
-   FCClass measure = measures.ExecuteMethod<FCClass>("GetItemAt", 0);
-   [[maybe_unused]]int width = measure.GetProperty<int>("Width");
+   if (measures.ExecuteMethod<int>("GetCount") > 0)
+   {
+      FCClass measure = measures.ExecuteMethod<FCClass>("GetItemAt", 0);
+      [[maybe_unused]]int width = measure.GetProperty<int>("Width");
+   }
    //
    measures.Push(); // this is how you return a value from C++ to Lua.
    return 1; // this is the number of values returned (i.e., pushed).
