@@ -7,7 +7,7 @@
 //  (Usage permitted by MIT License. See LICENSE file in this repository.)
 //
 
-#if OPERATING_SYSTEM == MAC_OS
+#if defined(__GNUC__)
 #include "Carbon/Carbon.h"
 #endif
 
@@ -20,7 +20,7 @@ static int sampleclib_get_string(lua_State *L)
 {
    bool pushed1 = false;
    std::string strKey(luaL_checkstring(L, 1));
-#if OPERATING_SYSTEM == MAC_OS
+#if defined(__GNUC__)
    auto C_to_CFString = [](const std::string &cstring)
       { return CFStringCreateWithCString(kCFAllocatorDefault, cstring.c_str(), kCFStringEncodingUTF8); };
    CFStringRef bundleID = C_to_CFString("com.finalelua.samples.sampleclib");
