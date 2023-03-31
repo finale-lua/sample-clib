@@ -11,15 +11,6 @@
 		B5AABB45284E56A700708D15 /* sampleclib.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5AABB43284E56A700708D15 /* sampleclib.hpp */; };
 		B5AABB4E284E57ED00708D15 /* libLua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AABB4B284E57C900708D15 /* libLua.a */; };
 		B5E4BA88286508BD0080A0E3 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E4BA87286508BD0080A0E3 /* Carbon.framework */; };
-		B5EFCF2728634BBA003AC07F /* Vector.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF1D28634BB9003AC07F /* Vector.h */; };
-		B5EFCF2828634BBA003AC07F /* List.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF1E28634BB9003AC07F /* List.h */; };
-		B5EFCF2928634BBA003AC07F /* RefCountedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF1F28634BB9003AC07F /* RefCountedObject.h */; };
-		B5EFCF2A28634BBA003AC07F /* RefCountedPtr.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF2128634BB9003AC07F /* RefCountedPtr.h */; };
-		B5EFCF2B28634BBA003AC07F /* Map.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF2228634BB9003AC07F /* Map.h */; };
-		B5EFCF2C28634BBA003AC07F /* LuaBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF2328634BB9003AC07F /* LuaBridge.h */; };
-		B5EFCF2D28634BBA003AC07F /* UnorderedMap.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF2428634BB9003AC07F /* UnorderedMap.h */; };
-		B5EFCF2E28634BBA003AC07F /* Array.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF2528634BB9003AC07F /* Array.h */; };
-		B5EFCF2F28634BBA003AC07F /* Optional.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF2628634BB9003AC07F /* Optional.h */; };
 		B5EFCF3428634C88003AC07F /* luabridge_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5EFCF3228634C88003AC07F /* luabridge_interface.cpp */; };
 		B5EFCF3528634C88003AC07F /* luabridge_interface.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5EFCF3328634C88003AC07F /* luabridge_interface.hpp */; };
 /* End PBXBuildFile section */
@@ -48,16 +39,6 @@
 		B5AABB46284E57C900708D15 /* Lua.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lua.xcodeproj; path = "lua-source/Lua.xcodeproj"; sourceTree = "<group>"; };
 		B5AABB52284E69DA00708D15 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		B5E4BA87286508BD0080A0E3 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = ../../../../../../../System/Library/Frameworks/Carbon.framework; sourceTree = "<group>"; };
-		B5EFCF1D28634BB9003AC07F /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
-		B5EFCF1E28634BB9003AC07F /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
-		B5EFCF1F28634BB9003AC07F /* RefCountedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefCountedObject.h; sourceTree = "<group>"; };
-		B5EFCF2028634BB9003AC07F /* detail */ = {isa = PBXFileReference; lastKnownFileType = folder; path = detail; sourceTree = "<group>"; };
-		B5EFCF2128634BB9003AC07F /* RefCountedPtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefCountedPtr.h; sourceTree = "<group>"; };
-		B5EFCF2228634BB9003AC07F /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
-		B5EFCF2328634BB9003AC07F /* LuaBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaBridge.h; sourceTree = "<group>"; };
-		B5EFCF2428634BB9003AC07F /* UnorderedMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnorderedMap.h; sourceTree = "<group>"; };
-		B5EFCF2528634BB9003AC07F /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
-		B5EFCF2628634BB9003AC07F /* Optional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Optional.h; sourceTree = "<group>"; };
 		B5EFCF3228634C88003AC07F /* luabridge_interface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = luabridge_interface.cpp; sourceTree = "<group>"; };
 		B5EFCF3328634C88003AC07F /* luabridge_interface.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = luabridge_interface.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,7 +69,6 @@
 			children = (
 				B5AABB52284E69DA00708D15 /* Shared.xcconfig */,
 				B5AABB46284E57C900708D15 /* Lua.xcodeproj */,
-				B5EFCF1C28634B7F003AC07F /* LuaBridge */,
 				B5AABB41284E569300708D15 /* Source */,
 				B55E2B372610CE9C003E0F63 /* Products */,
 				B50B920F26ED05D100DE877C /* Frameworks */,
@@ -123,24 +103,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B5EFCF1C28634B7F003AC07F /* LuaBridge */ = {
-			isa = PBXGroup;
-			children = (
-				B5EFCF2528634BB9003AC07F /* Array.h */,
-				B5EFCF2028634BB9003AC07F /* detail */,
-				B5EFCF1E28634BB9003AC07F /* List.h */,
-				B5EFCF2328634BB9003AC07F /* LuaBridge.h */,
-				B5EFCF2228634BB9003AC07F /* Map.h */,
-				B5EFCF2628634BB9003AC07F /* Optional.h */,
-				B5EFCF1F28634BB9003AC07F /* RefCountedObject.h */,
-				B5EFCF2128634BB9003AC07F /* RefCountedPtr.h */,
-				B5EFCF2428634BB9003AC07F /* UnorderedMap.h */,
-				B5EFCF1D28634BB9003AC07F /* Vector.h */,
-			);
-			name = LuaBridge;
-			path = LuaBridge/Source/LuaBridge;
-			sourceTree = SOURCE_ROOT;
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -148,17 +110,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5EFCF2E28634BBA003AC07F /* Array.h in Headers */,
 				B5AABB45284E56A700708D15 /* sampleclib.hpp in Headers */,
-				B5EFCF2728634BBA003AC07F /* Vector.h in Headers */,
-				B5EFCF2D28634BBA003AC07F /* UnorderedMap.h in Headers */,
-				B5EFCF2928634BBA003AC07F /* RefCountedObject.h in Headers */,
 				B5EFCF3528634C88003AC07F /* luabridge_interface.hpp in Headers */,
-				B5EFCF2B28634BBA003AC07F /* Map.h in Headers */,
-				B5EFCF2C28634BBA003AC07F /* LuaBridge.h in Headers */,
-				B5EFCF2A28634BBA003AC07F /* RefCountedPtr.h in Headers */,
-				B5EFCF2F28634BBA003AC07F /* Optional.h in Headers */,
-				B5EFCF2828634BBA003AC07F /* List.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +142,7 @@
 		B55E2B2E2610CE9C003E0F63 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = "Robert Patterson";
 				TargetAttributes = {
 					B55E2B352610CE9C003E0F63 = {
@@ -197,7 +150,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B55E2B312610CE9C003E0F63 /* Build configuration list for PBXProject "SampleCLib" */;
+			buildConfigurationList = B55E2B312610CE9C003E0F63 /* Build configuration list for PBXProject "SampleCLib-dylib" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -282,7 +235,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -300,7 +252,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -338,7 +289,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -350,7 +300,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -382,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B55E2B312610CE9C003E0F63 /* Build configuration list for PBXProject "SampleCLib" */ = {
+		B55E2B312610CE9C003E0F63 /* Build configuration list for PBXProject "SampleCLib-dylib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B55E2B382610CE9C003E0F63 /* Debug */,

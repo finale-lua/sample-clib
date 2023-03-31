@@ -35,7 +35,7 @@
                BlueprintIdentifier = "B5A10ED62864D2DE00C23894"
                BuildableName = "sampleclib.bundle"
                BlueprintName = "sampleclib"
-               ReferencedContainer = "container:SampleClib-new.xcodeproj">
+               ReferencedContainer = "container:SampleClib.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -76,7 +76,7 @@
             BlueprintIdentifier = "B5A10ED62864D2DE00C23894"
             BuildableName = "sampleclib.bundle"
             BlueprintName = "sampleclib"
-            ReferencedContainer = "container:SampleClib-new.xcodeproj">
+            ReferencedContainer = "container:SampleClib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
