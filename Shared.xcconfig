@@ -19,9 +19,11 @@ CLANG_CXX_LANGUAGE_STANDARD = c++17
 CLANG_CXX_LIBRARY = libc++
 
 CLANG_WARN_DOCUMENTATION_COMMENTS = YES
+COPY_PHASE_STRIP = YES
+DEAD_CODE_STRIPPING = YES
 
 ALWAYS_SEARCH_USER_PATHS = NO
-HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lua-source/lua-$(LUA_VERSION)/src" "$(PROJECT_DIR)/LuaBridge/Source"
+HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lua-source/lua-$(LUA_VERSION)/src" "$(PROJECT_DIR)/lua-source/$(LUABRIDGE_VERSION)/Source"
 
 // Current minimum plugin target OS (not actually used by Lua, so just needs to be low enough to prevent warnings)
 MACOSX_DEPLOYMENT_TARGET = 10.13

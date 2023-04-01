@@ -35,16 +35,6 @@
 		B579A3372864D57900E6113D /* Lua.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lua.xcodeproj; path = "lua-source/Lua.xcodeproj"; sourceTree = "<group>"; };
 		B5A10ED72864D2DE00C23894 /* sampleclib.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleclib.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A10EDF2864D32B00C23894 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
-		B5A10EF02864D47400C23894 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
-		B5A10EF12864D47400C23894 /* LuaBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaBridge.h; sourceTree = "<group>"; };
-		B5A10EF22864D47400C23894 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
-		B5A10EF32864D47400C23894 /* Optional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Optional.h; sourceTree = "<group>"; };
-		B5A10EF42864D47400C23894 /* RefCountedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefCountedObject.h; sourceTree = "<group>"; };
-		B5A10EF52864D47400C23894 /* RefCountedPtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefCountedPtr.h; sourceTree = "<group>"; };
-		B5A10EF62864D47400C23894 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
-		B5A10EF72864D47400C23894 /* UnorderedMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnorderedMap.h; sourceTree = "<group>"; };
-		B5A10EF82864D47400C23894 /* detail */ = {isa = PBXFileReference; lastKnownFileType = folder; path = detail; sourceTree = "<group>"; };
-		B5A10EF92864D47400C23894 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
 		B5DF46082864FCE800BCD610 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = ../../../../../../../System/Library/Frameworks/Carbon.framework; sourceTree = "<group>"; };
 		B5DF460B2864FE2600BCD610 /* luabridge_interface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = luabridge_interface.hpp; sourceTree = "<group>"; };
 		B5DF460C2864FE2600BCD610 /* sampleclib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sampleclib.hpp; sourceTree = "<group>"; };
@@ -87,7 +77,6 @@
 			children = (
 				B5A10EDF2864D32B00C23894 /* Shared.xcconfig */,
 				B579A3372864D57900E6113D /* Lua.xcodeproj */,
-				B5A10EEF2864D45100C23894 /* LuaBridge */,
 				B5A10EE82864D3DE00C23894 /* Source */,
 				B5A10ED82864D2DE00C23894 /* Products */,
 				B579A33F2864D59100E6113D /* Frameworks */,
@@ -113,24 +102,6 @@
 			);
 			name = Source;
 			path = src;
-			sourceTree = "<group>";
-		};
-		B5A10EEF2864D45100C23894 /* LuaBridge */ = {
-			isa = PBXGroup;
-			children = (
-				B5A10EF62864D47400C23894 /* Array.h */,
-				B5A10EF82864D47400C23894 /* detail */,
-				B5A10EF02864D47400C23894 /* List.h */,
-				B5A10EF12864D47400C23894 /* LuaBridge.h */,
-				B5A10EF22864D47400C23894 /* Map.h */,
-				B5A10EF32864D47400C23894 /* Optional.h */,
-				B5A10EF42864D47400C23894 /* RefCountedObject.h */,
-				B5A10EF52864D47400C23894 /* RefCountedPtr.h */,
-				B5A10EF72864D47400C23894 /* UnorderedMap.h */,
-				B5A10EF92864D47400C23894 /* Vector.h */,
-			);
-			name = LuaBridge;
-			path = LuaBridge/Source/LuaBridge;
 			sourceTree = "<group>";
 		};
 		B5DF460A2864FDB900BCD610 /* Resources */ = {
@@ -177,7 +148,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B5A10ED22864D2DE00C23894 /* Build configuration list for PBXProject "SampleClib-new" */;
+			buildConfigurationList = B5A10ED22864D2DE00C23894 /* Build configuration list for PBXProject "SampleClib" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -395,7 +366,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B5A10ED22864D2DE00C23894 /* Build configuration list for PBXProject "SampleClib-new" */ = {
+		B5A10ED22864D2DE00C23894 /* Build configuration list for PBXProject "SampleClib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5A10ED92864D2DE00C23894 /* Debug */,

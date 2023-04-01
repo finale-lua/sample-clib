@@ -5,9 +5,10 @@
     <LuaDir>$(ProjectDir)..\lua-source\lua-$(LuaVersion)\src</LuaDir>
     <LuaName>sampleclib</LuaName>
     <ReleaseDir>$(ProjectDir)..\release</ReleaseDir>
+    <LuaBridgeDir>$(ProjectDir)..\lua-source\$(LuaBridgeVersion)\Source;$(LuaBridgeDir)</LuaBridgeDir>
   </PropertyGroup>
   <PropertyGroup>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(LuaDir);$(ProjectDir)\..\LuaBridge\Source</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(LuaDir);$(LuaBridgeDir)</IncludePath>
     <TargetName>$(LuaName)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup>
@@ -31,6 +32,9 @@
     </BuildMacro>
     <BuildMacro Include="ReleaseDir">
       <Value>$(ReleaseDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LuaBridgeDir">
+      <Value>$(LuaBridgeDir)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
